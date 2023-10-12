@@ -25,5 +25,5 @@ This is similar to the @-mentions in X/Twitter. The user can type any text in th
 *** Edge Cases ***
 - If user wants to enter more than one mention there should be provision for it and it is handled.
 - The already mentioned user can come up in the mentions dropdown even if the user types any other text, it is handled in the code.
-- The textbox should be on foucs after a mnetion is selected
+- The textbox should be on foucs after a mention is selected
  
