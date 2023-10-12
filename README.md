@@ -1,4 +1,4 @@
-# Frontend Assignment 🚀
+# Frontend Assignment Solution 🚀
 
 Project: Mentions component
 Time provided: 2 hours
@@ -8,25 +8,22 @@ Link to design: [Design](https://www.figma.com/file/EEmRktq44VPR3u8Lx7otOJ/Front
 Description
 This is similar to the @-mentions in X/Twitter. The user can type any text in the input element but when user types `@` then a select box should appear from which they can select an option and it should be displayed in input element. For example `Hi @Luke Skywalker may the force be with you.`. An `onChange` handler should be triggered with the input and the options selected, in a format of your choice.
  
-Instructions:
+*** How to run the solution ***
+- Fork the repo in the sytem in your desired loaction
+- After going inside the main folder run npm install/ yarn install it     will download the required libraries
+- Hit npm run dev command to start the app
+- The app will by default start on "http://127.0.0.1:5173/"
+- In your browser open the above url to test the functionality
 
-- Implement as much as possible in the given time.
-- Push your code to Github/Gitlab/<any other> and send us the link.
-- Please write us a note on what else you would do if you could spend more time.
+*** Test Cases ***
+- On typing the text in textbox the required text should appear
+- When the text contains "@" symbol it should display a list of mentions from a list below the textbox
+- On selecting a mention from the list the mention should appear in the text box after replacing the text after "@" entered by user
+- Further typing can be done unless encountered another "@" symbol which will open the mentions dropdown again
+- The mentions should show only those items in list which is after "@"
+
+*** Edge Cases ***
+- If user wants to enter more than one mention there should be provision for it and it is handled.
+- The already mentioned user can come up in the mentions dropdown even if the user types any other text, it is handled in the code.
+- The textbox should be on foucs after a mnetion is selected
  
-What we look for:
-
-- Thinking: Are you able to think through the flow and edge cases?
-- Tests: How well is the code tested through unit/integration tests?
-- Documentation: How can anyone new run this app locally and contribute to it?
-- Code organisation: How are you organizing your components?
-
-What we don’t look for:
-
- - Custom select box: You need not implement a custom select box. You're welcome to use the native select box or your favorite library.
- - Styling: It can look & feel very bare-bones, that's perfectly fine. 
-
-From where you can get data for options while triggering mention actions
- - Use data present in data.json as raw data for mention component.
-
-Happy coding! 💻
